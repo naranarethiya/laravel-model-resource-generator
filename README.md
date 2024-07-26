@@ -2,7 +2,7 @@
 
 `model-resource-generator` is a custom Laravel command that generates API resource classes for all available models in your Laravel application. It includes the existing columns and relations of each model in the generated resource classes.
 
-It respect you hidden attributes of model and do not load any relation to model by its own
+It respects your model's hidden attributes and does not load any relations automatically. It adjusts the API attributes based on whether relations are loaded or not.
 
 ## Installation
 
