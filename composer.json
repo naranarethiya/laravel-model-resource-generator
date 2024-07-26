@@ -1,0 +1,26 @@
+{
+    "name": "naranarethiya/laravel-model-resource-generator",
+    "description": "Automatically generate API resource classes for your Laravel models, simplifying the process of transforming your models into API resources with ease.",
+    "type": "library",
+    "require": {
+        "laravel/framework": "^8.0|^9.0|^10.0|^11.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Naranarethiya\\ModelResourceGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Naran Arethiya",
+            "email": "naranarethiya@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "laravel/pint": "^1.17",
+        "larastan/larastan": "^2.0",
+        "orchestra/testbench": "^9.2"
+    }
+}
