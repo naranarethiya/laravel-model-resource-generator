@@ -196,7 +196,7 @@ class GenerateApiResources extends Command
      */
     protected function generateResourceContent(string $resourceClass, array $columns, array $relations): string
     {
-        $resourceTemplate = File::get(base_path('stubs/api-resource.stub'));
+        $resourceTemplate = File::get('../stubs/api-resource.stub');
 
         $columnsArray = collect($columns)
             ->map(fn ($column) => "'$column' => \$this->$column,")
