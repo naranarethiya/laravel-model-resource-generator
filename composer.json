@@ -1,5 +1,5 @@
 {
-    "name": "naranarethiya/laravel-model-resource-generator",
+    "name": "naranarethiya/model-resource-generator",
     "description": "Automatically generate API resource classes for your Laravel models, simplifying the process of transforming your models into API resources with ease.",
     "type": "library",
     "require": {
