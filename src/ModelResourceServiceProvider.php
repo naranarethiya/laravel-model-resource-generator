@@ -2,8 +2,8 @@
 
 namespace Naranarethiya\ModelResourceGenerator;
 
-use App\Console\Commands\GenerateApiResources;
 use Illuminate\Support\ServiceProvider;
+use Naranarethiya\ModelResourceGenerator\Console\Commands\GenerateApiResources;
 
 class ModelResourceServiceProvider extends ServiceProvider
 {

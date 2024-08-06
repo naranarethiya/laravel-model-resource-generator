@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Naranarethiya\ModelResourceGenerator\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
@@ -86,7 +86,7 @@ class GenerateApiResources extends Command
     {
         // show errors
         foreach ($this->errors as $error) {
-            $this->error($error);
+            // $this->error($error);
         }
 
         $this->info('................');
@@ -196,7 +196,7 @@ class GenerateApiResources extends Command
      */
     protected function generateResourceContent(string $resourceClass, array $columns, array $relations): string
     {
-        $resourceTemplate = File::get('../stubs/api-resource.stub');
+        $resourceTemplate = File::get(__DIR__.'/../../../stubs/api-resource.stub');
 
         $columnsArray = collect($columns)
             ->map(fn ($column) => "'$column' => \$this->$column,")

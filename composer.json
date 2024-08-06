@@ -22,5 +22,12 @@
         "laravel/pint": "^1.17",
         "larastan/larastan": "^2.0",
         "orchestra/testbench": "^9.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Naranarethiya\\ModelResourceGenerator\\ModelResourceServiceProvider"
+            ]
+        }
     }
 }
