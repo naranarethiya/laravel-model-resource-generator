@@ -86,7 +86,7 @@ class GenerateApiResources extends Command
     {
         // show errors
         foreach ($this->errors as $error) {
-            $this->error($error);
+            // $this->error($error);
         }
 
         $this->info('................');
